@@ -1,4 +1,30 @@
-html {
-  backgroun-color: black; }
+.alertas__fail {
+  margin-top: 5em;
+  color: #a93b3b;
+  text-align: right;
+  font-size: 14px;
+  background-color: #ee6f6f;
+  border-radius: 18px;
+}
+
+.alertas__Sucess {
+  color: #299a60;
+  text-align: right;
+  font-size: 14px;
+  background-color: #5fdf9e;
+  border-radius: 18px;
+}
+
+.close {
+  float: left;
+}
+
+.links__conta {
+  font-size: 18px;
+}
+
+.central {
+  border-radius: 18px;
+}
 
 /*# sourceMappingURL=style.css.map */

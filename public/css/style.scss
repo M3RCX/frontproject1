@@ -1,0 +1,41 @@
+$fail: #ee6f6f;
+$failText: #a93b3b;
+$successText: #299a60;
+$success: #5fdf9e;
+
+
+@mixin alert {
+    border-radius: 18px;
+   
+}
+
+//personalização alerta
+.alertfail{
+    margin-top: 5em;
+    color: $failText;
+    text-align: right;
+    font-size: 14px;
+    background-color: $fail;
+    @include alert();
+}
+
+.alertSucess{
+
+    color: $successText;
+    text-align: right;
+    font-size: 14px;
+    background-color: $success;
+    @include alert();
+}
+
+.close{
+    float: left;
+}
+
+.conta{
+    font-size: 18px;
+}
+.central{
+    border-radius: 18px;
+}
+

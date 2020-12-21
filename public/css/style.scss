@@ -10,7 +10,7 @@ $success: #5fdf9e;
 }
 
 //personalização alerta
-.alertfail{
+.alertas__fail{
     margin-top: 5em;
     color: $failText;
     text-align: right;
@@ -19,7 +19,7 @@ $success: #5fdf9e;
     @include alert();
 }
 
-.alertSucess{
+.alertas__Sucess{
 
     color: $successText;
     text-align: right;
@@ -32,7 +32,7 @@ $success: #5fdf9e;
     float: left;
 }
 
-.conta{
+.links__conta{
     font-size: 18px;
 }
 .central{

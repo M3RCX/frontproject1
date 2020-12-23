@@ -9,6 +9,12 @@ $success: #5fdf9e;
    
 }
 
+@mixin espacamento{
+margin-bottom: 2em;
+display: flex;
+flex-direction: column;
+}
+
 //personalização alerta
 .alertas__fail{
     margin-top: 5em;
@@ -38,4 +44,23 @@ $success: #5fdf9e;
 .central{
     border-radius: 18px;
 }
+
+.login__email{
+@include espacamento();
+
+}
+
+.login__senha{
+@include espacamento();
+}
+
+.login__botao{
+width: 100%;
+}
+
+.login__conectado{
+    
+}
+
+
 

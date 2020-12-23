@@ -11,17 +11,17 @@
     <title>Login page</title>
 </head>
 <body>
-    <div class="container ">
+    <div class="container alertas">
 
         <div class="container">     
-            <div class="alert alertfail alert-danger .col-xs-6 .col-md-4" role="alert">
+            <div class="alert alertas__fail alert-danger .col-xs-6 .col-md-4" role="alert">
                 <span class="glyphicon glyphicon-remove close" aria-hidden="true"></span>
                 <span class="sr-only">Error:</span>
                     Digite seu Email e Senha
               </div>
         </div>
         <div class="container">     
-            <div class="alert alertSucess alert-success .col-xs-6 .col-md-4" role="alert">
+            <div class="alert alertas__Sucess alert-success .col-xs-6 .col-md-4" role="alert">
                 <span class="glyphicon glyphicon-ok close" aria-hidden="true"></span>
                 <span class="sr-only">Error:</span>
                     Você foi logado com sucesso
@@ -32,33 +32,34 @@
         </div>
     </div>
 
-    <div class="container ">
+    <div class="container login">
         <div class="jumbotron panel panel-default central">
             <div class="container panel-body ">
                 <div class="container">
                     
                     <form class="form-horizontal">
-                        <p CLASS="text-center">Entrar na minha conta</p>
+                        <p class="text-center">Entrar na minha conta</p>
                         <div class="form-group ">
                             
-                            <div class="">
-                                <input id="email" type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group ">
+
                             
+
                             <div class="">
                                 <input id="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
+
+                            <div class="login__senha">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <div class="">
+                            <div class="login__botao">
                                 <button type="submit" class="btn btn-primary">Entrar</button>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="">
+                            <div class="login__conectado">
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox"> Mantenha-me conectado
@@ -72,17 +73,18 @@
         </div>
     </div>
 
-    <div class="conatiner">
-        <u><p class="text-center conta">Precisa de uma conta? <a href="#">Click aqui</a></p></u>
-        <p class="text-center senha">Esqueceu sua senha? <a href="#">Click aqui</a></p>
+    <div class="conatiner links">
+        <u><p class="text-center links__conta">Precisa de uma conta? <a href="#">Click aqui</a></p></u>
+        <p class="text-center links__senha">Esqueceu sua senha? <a href="#">Click aqui</a></p>
     </div>
 
-    <div class="wrapper">
+    <div class="informacao">
         <div class="container">
 
             <div class="panel panel-default">
-                <div class="panel-body">
-                    <p class="text-center"> Keyrus </p>
+                <div class="jumbotron col-md-4"><p class="text-center">!</p></div>
+                <div class="panel-body col-md-8">
+                    <p class="text-center "> Keyrus </p>
                 </div>
             </div>
         </div>

@@ -1,17 +1,23 @@
+p {
+  margin: 0; }
+
 .alertas__fail {
-  margin-top: 5em;
-  color: #a93b3b;
+  color: #B14241;
   text-align: right;
   font-size: 14px;
-  background-color: #ee6f6f;
-  border-radius: 18px; }
+  background-color: #F27E7E;
+  border-radius: 18px;
+  margin-top: 2em;
+  display: none; }
 
 .alertas__Sucess {
-  color: #299a60;
+  color: #46B078;
   text-align: right;
   font-size: 14px;
-  background-color: #5fdf9e;
-  border-radius: 18px; }
+  background-color: #61DF9F;
+  border-radius: 18px;
+  margin-top: 2em;
+  display: none; }
 
 .close {
   float: left; }
@@ -22,17 +28,44 @@
 .central {
   border-radius: 18px; }
 
-.login__email {
-  margin-bottom: 2em;
-  display: flex;
-  flex-direction: column; }
-
 .login__senha {
-  margin-bottom: 2em;
-  display: flex;
-  flex-direction: column; }
+  margin-bottom: 2em; }
 
 .login__botao {
-  width: 100%; }
+  width: 100%;
+  background-color: #2993DD;
+  color: #F9F9F9; }
+
+#close {
+  cursor: default; }
+
+#okay {
+  cursor: default; }
+
+#okay:hover {
+  color: #46B078; }
+
+#close:hover {
+  color: #B14241; }
+
+.informacao__texto {
+  padding: 0px; }
+
+.informacao__exclamacao {
+  padding: 0px; }
+
+.informacao__exclamacao__p {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.informacao__texto__p {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.informacao {
+  margin-top: 1em; }
+
+.informacao__panel1 {
+  background-color: #9F9F9F; }
 
 /*# sourceMappingURL=style.css.map */

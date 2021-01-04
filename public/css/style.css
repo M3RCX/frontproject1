@@ -7,7 +7,8 @@ p {
   font-size: 14px;
   background-color: #F27E7E;
   border-radius: 18px;
-  margin-top: 2em;
+  margin-top: 5em;
+  margin-bottom: 5em;
   display: none; }
 
 .alertas__Sucess {
@@ -16,7 +17,8 @@ p {
   font-size: 14px;
   background-color: #61DF9F;
   border-radius: 18px;
-  margin-top: 2em;
+  margin-top: 5em;
+  margin-bottom: 5em;
   display: none; }
 
 .close {
@@ -67,5 +69,8 @@ p {
 
 .informacao__panel1 {
   background-color: #9F9F9F; }
+
+#login {
+  margin-top: 12em; }
 
 /*# sourceMappingURL=style.css.map */

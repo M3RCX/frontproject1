@@ -1,108 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <!--build:css css/style.min.css-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <!--build:css css/style.min.css-->
     <link rel="stylesheet" href="css/style.css">
     <!--endbuild-->
     <title>Login page</title>
 </head>
 <body>
-    <div class="container alertas">
-
-        <div class="container">     
-            <div id="alertFail" class="alert alertas__fail alert-danger .col-xs-6 .col-md-4" role="alert">
-                <span id="close" class="glyphicon glyphicon-remove close" aria-hidden="true"></span>
-                <span class="sr-only">Error:</span>
+    <main>
+        
+        <div class="container alertas">
+            
+            <div class="container">     
+                <div id="alertFail" class="alert alertas__fail alert-danger .col-xs-6 .col-md-4" role="alert">
+                    <span id="close" class="glyphicon glyphicon-remove close" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
                     Digite seu Email e Senha
-              </div>
-        </div>
-        <div class="container">     
-            <div id="alertSucess" class="alert alertas__Sucess alert-success .col-xs-6 .col-md-4" role="alert">
-                <span id="okay" class="glyphicon glyphicon-ok close" aria-hidden="true"></span>
-                <span class="sr-only">Error:</span>
+                </div>
+            </div>
+            <div class="container">     
+                <div id="alertSucess" class="alert alertas__Sucess alert-success .col-xs-6 .col-md-4" role="alert">
+                    <span id="okay" class="glyphicon glyphicon-ok close" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span>
                     Você foi logado com sucesso
-              </div>
+                </div>
             </div>
         </div>
-
-        </div>
+        
     </div>
+</div>
 
-    <div class="container login">
-        <div class="jumbotron panel panel-default central">
-            <div class="container panel-body ">
-                <div class="container">
-                    <form class="form-horizontal">
-                        <p class="text-center">Entrar na minha conta</p>
-                        <div class="form-group">
-                            <div class="col-xs-6 col-md-4"></div>
-                            <div class="col-xs-6 col-md-4">
-                                <input id="email" type="email" class="login__email form-control" id="inputEmail3" placeholder="Email">
+<div class="container" id="login">
+    <div class="jumbotron panel panel-default central">
+        <div class="container panel-body ">
+            <div class="container">
+                <form class="form-horizontal">
+                    <p class="text-center">Entrar na minha conta</p>
+                    <div class="form-group">
+                        <div class="col-xs-3 col-md-4"></div>
+                        <div class="col-xs-6 col-md-4">
+                            <input id="email" type="email" class="login__email form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-xs-3 col-md-4"></div>
+                        <div class="col-xs-6 col-md-4">
+                            <input id="password" type="password" class="login__senha form-control" id="inputPassword3" placeholder="Password">
+                        </div>    
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-3 col-md-4"></div>
+                        <div class="col-xs-6 col-md-4">
+                            <a id="btnLogin" type="submit" class=" login__botao btn ">Entrar</a>
+                        </div>   
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-3 col-md-4"></div>
+                        <div class="col-xs-6 col-md-4">
+                            <div class=" login__conectado checkbox">
+                                <label>
+                                    <input type="checkbox"> Mantenha-me conectado
+                                </label>
                             </div>
                         </div>
-                        
-                        <div class="form-group">
-                            <div class="col-xs-6 col-md-4"></div>
-                            <div class="col-xs-6 col-md-4">
-                                <input id="password" type="password" class="login__senha form-control" id="inputPassword3" placeholder="Password">
-                            </div>    
-                        </div>
-                        <div class="form-group">
-                            <div class="col-xs-6 col-md-4"></div>
-                            <div class="col-xs-6 col-md-4">
-                                <a id="login" type="submit" class=" login__botao btn ">Entrar</a>
-                            </div>   
-                        </div>
-                        <div class="form-group">
-                            <div class="col-xs-6 col-md-4"></div>
-                            <div class="col-xs-6 col-md-4">
-                                <div class=" login__conectado checkbox">
-                                    <label>
-                                        <input type="checkbox"> Mantenha-me conectado
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                        
-                </div>
-            </div> 
-        </div>
-    </div>
-
-    <div class="conatiner links">
-        <u><p class="text-center links__conta">Precisa de uma conta? <a href="#">Click aqui</a></p></u>
-        <p class="text-center links__senha">Esqueceu sua senha? <a href="#">Click aqui</a></p>
-    </div>
-    <div class="informacao container col-md-8">
-        <div class="container">
-
-            
-            <div class="col-xs-6 col-md-4"></div>
-            <div class="panel panel-default informacao__panel1 col-md-1">
-                <div class="panel-body informacao__exclamacao">
-                    <p class="text-center informacao__exclamacao__p">!</p>
-                </div>
+                    </div>
+                </form>
+                
             </div>
+        </div> 
+    </div>
+</div>
 
-            
-            <div class="panel panel-default col-md-6">
-                <div class="panel-body informacao__texto">
-                    <p class="text-center informacao__texto__p">teste</p>
-                </div>
+<div class="conatiner links">
+    <u><p class="text-center links__conta">Precisa de uma conta? <a href="#">Click aqui</a></p></u>
+    <p class="text-center links__senha">Esqueceu sua senha? <a href="#">Click aqui</a></p>
+</div>
+<div class="informacao container ">
+    <div class="container">
+        
+        
+        <div class="col-xs-2 col-md-3"></div>
+        <div class="panel panel-default informacao__panel1 col-md-1 col-xs-1">
+            <div class="panel-body informacao__exclamacao">
+                <p class="text-center informacao__exclamacao__p">!</p>
             </div>
         </div>
+        
+        
+        <div class="panel panel-default col-md-5 col-xs-6">
+            <div class="panel-body informacao__texto">
+                <p class="text-center informacao__texto__p">Keyrus</p>
+            </div>
+        </div>
+        
+        <div class="col-xs-2 col-md-4"></div>
     </div>
-        <script src="js/jquery/jquery.js"></script>
-        <!-- build:js js/index.min.js -->
-        <script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-        <!--endbuild-->
-        <script src="js/jquery/validaLogin.js"></script>
+</div>
+<script src="js/jquery/jquery.js"></script>
+<!-- build:js js/index.min.js -->
+<script src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!--endbuild-->
+<script src="js/jquery/validaLogin.js"></script>
 
-    </main>
+
+</main>
 </body>
 </html>

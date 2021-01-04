@@ -12,7 +12,8 @@ $textLogin:#F9F9F9;
 }
 @mixin alert {
     border-radius: 18px;
-    margin-top: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 @mixin espacamento{
@@ -116,4 +117,10 @@ margin-top: 1em;
 
 .informacao__panel1{
     background-color: $gray;
+}
+
+
+#login{
+    margin-top: 12em;
+    
 }

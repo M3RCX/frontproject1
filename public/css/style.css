@@ -1,5 +1,11 @@
+@media screen and (min-width: 500px) {
+  .login {
+    width: 100%; } }
 p {
   margin: 0; }
+
+body {
+  background-image: url(../assets/bg.png); }
 
 .alertas__fail {
   color: #B14241;
@@ -9,6 +15,7 @@ p {
   border-radius: 18px;
   margin-top: 5em;
   margin-bottom: 5em;
+  font-family: "Myriad Pro", sans-serif;
   display: none; }
 
 .alertas__Sucess {
@@ -19,6 +26,7 @@ p {
   border-radius: 18px;
   margin-top: 5em;
   margin-bottom: 5em;
+  font-family: "Myriad Pro", sans-serif;
   display: none; }
 
 .close {
@@ -27,16 +35,24 @@ p {
 .links__conta {
   font-size: 18px; }
 
-.central {
-  border-radius: 18px; }
+.login__email {
+  font-family: 'Trebuchet MS', sans-serif; }
 
 .login__senha {
-  margin-bottom: 2em; }
+  font-family: 'Trebuchet MS', sans-serif; }
 
 .login__botao {
   width: 100%;
   background-color: #2993DD;
   color: #F9F9F9; }
+
+.login__panel {
+  padding-left: 0;
+  padding-right: 0; }
+
+.login__title {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: bolder !important; }
 
 #close {
   cursor: default; }
@@ -50,8 +66,13 @@ p {
 #close:hover {
   color: #B14241; }
 
-.informacao__texto {
-  padding: 0px; }
+.copyright__texto {
+  padding: 0; }
+
+.copyright {
+  max-width: 440px;
+  max-height: 25px;
+  border-radius: 0; }
 
 .informacao__exclamacao {
   padding: 0px; }
@@ -68,9 +89,15 @@ p {
   margin-top: 1em; }
 
 .informacao__panel1 {
-  background-color: #9F9F9F; }
+  background-color: #9F9F9F;
+  margin-right: 10px;
+  max-width: 29px;
+  max-height: 27px;
+  border-radius: 0px; }
 
-#login {
-  margin-top: 12em; }
+.login {
+  max-width: 395px;
+  margin-top: 12em;
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

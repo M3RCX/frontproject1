@@ -21,8 +21,45 @@ margin-bottom: 2em;
 
 }
 
+@mixin font-campos {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+@mixin font-textosPrincipais{
+
+    font-family: "Myriad Pro", sans-serif;
+
+}
+
+@mixin font-textosPrincipaisBold{
+
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: bolder !important;
+
+}
+
+@mixin bg {
+    background-image: url(../assets/bg.png);
+}
+
+@mixin panelLogin {
+    max-width: 395px;
+
+}
+
+@media screen and (min-width: 500px){
+    .login {
+        width: 100%;
+    }
+}
+
 p{
     margin: 0;
+}
+
+body{
+    @include bg();
+
 }
 
 //personalização alerta
@@ -33,6 +70,7 @@ p{
     font-size: 14px;
     background-color: $fail;
     @include alert();
+    @include font-textosPrincipais();
     display: none;
 }
 
@@ -43,6 +81,7 @@ p{
     font-size: 14px;
     background-color: $success;
     @include alert();
+    @include font-textosPrincipais();
     display: none;
 }
 
@@ -53,22 +92,28 @@ p{
 .links__conta{
     font-size: 18px;
 }
-.central{
-    border-radius: 18px;
-}
+
 
 .login__email{
-
-
+@include font-campos();
 }
 
 .login__senha{
-@include espacamento();
+@include font-campos();
 }
 
 .login__botao{
 width: 100%;
 @include corBotao();
+}
+
+.login__panel{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.login__title{
+    @include font-textosPrincipaisBold();
 }
 
 #close{
@@ -88,19 +133,27 @@ width: 100%;
 }
 
 
-.informacao__texto{
+.copyright__texto{
     
-    padding: 0px;
+    padding: 0;
+}
+
+.copyright{
+    max-width: 440px;
+    max-height: 25px;
+    border-radius: 0;
 }
 
 .informacao__exclamacao{
     
     padding: 0px;
+    
 }
 
 .informacao__exclamacao__p{
     margin-top: 0px;
     margin-bottom: 0px;
+    
     
     
 }
@@ -117,10 +170,18 @@ margin-top: 1em;
 
 .informacao__panel1{
     background-color: $gray;
+    margin-right: 10px;
+    max-width: 29px;
+    max-height: 27px;
+    border-radius: 0px;
 }
 
 
-#login{
+.login{
+    @include panelLogin();
     margin-top: 12em;
     
+    padding: 0;
+    
 }
+

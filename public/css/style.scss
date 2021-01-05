@@ -2,9 +2,11 @@ $fail: #F27E7E;
 $failText: #B14241;
 $successText: #46B078;
 $success: #61DF9F;
-$gray: #9F9F9F;
+$gray: #7b7b7b;
 $botaoLogin: #2993DD;
-$textLogin:#F9F9F9;
+$textLogin:#fefefe;
+$grayText: #787878;
+$textlogintitle: #939797;
 
 @mixin corBotao{
     background-color: $botaoLogin;
@@ -44,12 +46,12 @@ margin-bottom: 2em;
 
 @mixin panelLogin {
     max-width: 395px;
-
+    border-radius: 28px;
 }
 
-@media screen and (min-width: 500px){
+@media screen and (max-width: 500px){
     .login {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -91,6 +93,12 @@ body{
 
 .links__conta{
     font-size: 18px;
+    color: $grayText;
+}
+
+.links__senha{
+    
+    color: $grayText;
 }
 
 
@@ -103,17 +111,24 @@ body{
 }
 
 .login__botao{
-width: 100%;
+width: 117px;
+height: 40px;
 @include corBotao();
 }
 
-.login__panel{
+.login__body{
     padding-left: 0;
     padding-right: 0;
 }
 
+.login__panel{
+    border-radius: 18px !important;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
 .login__title{
     @include font-textosPrincipaisBold();
+    color: $textlogintitle;
 }
 
 #close{
@@ -126,10 +141,12 @@ width: 100%;
 
 #okay:hover{
     color: $successText;
+    cursor: pointer;
 }
 
 #close:hover{
     color: $failText;
+    cursor: pointer;
 }
 
 
@@ -153,6 +170,7 @@ width: 100%;
 .informacao__exclamacao__p{
     margin-top: 0px;
     margin-bottom: 0px;
+    color: #FeFeFe;
     
     
     
@@ -183,5 +201,9 @@ margin-top: 1em;
     
     padding: 0;
     
+}
+
+.login__botao:hover{
+    color: #F9F9F9;
 }
 

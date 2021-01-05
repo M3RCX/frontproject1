@@ -21,6 +21,31 @@ $(document).ready(function(){
             
         }
 
-    })
+    });
+
+    $("#close").click(function(){
+        var displaySucess = $("#alertSucess")
+        var displayFail = $("#alertFail")
+        var login = $("#login")
+        
+        $(displaySucess).css("display", "none")
+        $(displayFail).css("display", "none")
+        $(login).css("margin-top", "12em")
+            
+        
+    });
+
+    $("#okay").click(function(){
+        var displaySucess = $("#alertSucess")
+        var displayFail = $("#alertFail")
+        var login = $("#login")
+        
+        $(displaySucess).css("display", "none")
+        $(displayFail).css("display", "none")
+        $(login).css("margin-top", "12em")
+            
+        
+    });
+
 });
 

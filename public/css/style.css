@@ -1,6 +1,6 @@
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .login {
-    width: 100%; } }
+    width: 90%; } }
 p {
   margin: 0; }
 
@@ -33,7 +33,11 @@ body {
   float: left; }
 
 .links__conta {
-  font-size: 18px; }
+  font-size: 18px;
+  color: #787878; }
+
+.links__senha {
+  color: #787878; }
 
 .login__email {
   font-family: 'Trebuchet MS', sans-serif; }
@@ -42,17 +46,23 @@ body {
   font-family: 'Trebuchet MS', sans-serif; }
 
 .login__botao {
-  width: 100%;
+  width: 117px;
+  height: 40px;
   background-color: #2993DD;
-  color: #F9F9F9; }
+  color: #fefefe; }
 
-.login__panel {
+.login__body {
   padding-left: 0;
   padding-right: 0; }
 
+.login__panel {
+  border-radius: 18px !important;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2); }
+
 .login__title {
   font-family: "Myriad Pro", sans-serif;
-  font-weight: bolder !important; }
+  font-weight: bolder !important;
+  color: #939797; }
 
 #close {
   cursor: default; }
@@ -61,10 +71,12 @@ body {
   cursor: default; }
 
 #okay:hover {
-  color: #46B078; }
+  color: #46B078;
+  cursor: pointer; }
 
 #close:hover {
-  color: #B14241; }
+  color: #B14241;
+  cursor: pointer; }
 
 .copyright__texto {
   padding: 0; }
@@ -79,7 +91,8 @@ body {
 
 .informacao__exclamacao__p {
   margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  color: #FeFeFe; }
 
 .informacao__texto__p {
   margin-top: 0px;
@@ -89,7 +102,7 @@ body {
   margin-top: 1em; }
 
 .informacao__panel1 {
-  background-color: #9F9F9F;
+  background-color: #7b7b7b;
   margin-right: 10px;
   max-width: 29px;
   max-height: 27px;
@@ -97,7 +110,11 @@ body {
 
 .login {
   max-width: 395px;
+  border-radius: 28px;
   margin-top: 12em;
   padding: 0; }
+
+.login__botao:hover {
+  color: #F9F9F9; }
 
 /*# sourceMappingURL=style.css.map */
